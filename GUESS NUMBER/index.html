@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <!-- LINK TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="bg-[#1F1F1F] text-[#EBEBEB]" style="font-family: 'Press Start 2P';">
+
+    <div class="max-w-2xl mx-auto p-7 h-screen flex flex-col justify-center items-center" id="game-container">
+        <h1 class="text-3xl text-center">Indovina il numero!</h1>
+
+        <!-- CASELLA DOVE INSERIRE IL NUMERO PENSATO + BUTTON 'CHECK' -->
+        <div class="mt-10 flex gap-3 justify-center items-center mx-auto text-center text-md max-[480px]:flex-col">
+            <label for="number" id="huess" class="text-sm"></label>
+            <p class="text-[12px]">scegli un numero da 1 a 20</p>
+            <input
+                class="w-fit  text-[#1F1F1F] text-2xl text-center bg-[#EF2E2E] border-[#F2CD0A] border-2 rounded-sm focus:border-none"
+                type="number" id="guess" min="1" max="20" onkeypress="handleKeyPress(event)" />
+        </div>
+
+        <button id="start-btn" onclick="checkGuess()" type="submit"
+            class="py-3 px-6 mx-auto block mt-5  text-[#f2cd0a] text-3xl  bg-[#EF2E2E] rounded-md shadow-sm shadow-slate-500">
+            START
+        </button>
+
+        <div id="result" class="mt-8 mx-auto text-center"></div>
+
+        <div id="start-gif-container" class="mx-auto text-center">
+            <img src="intro.gif" id="start-gif" class="w-fit" alt=""> 
+        </div>
+
+        <div id="gif-container" class="hidden">
+            <img src="yes.gif" alt="congratulazioni!" id="gif-correct" class="hidden mt-5 mx-auto w-fit">
+            <img src="nearr.gif" alt="" id="gif-near" class="hidden mt-5 mx-auto w-fit">
+            <img src="no.gif" alt="" id="gif-close" class="hidden mt-5 mx-auto w-fit">
+            <img src="deadd.gif" id="gif-lose" class="hidden mt-5 mx-auto w-fit" alt="">
+        </div>
+
+        <div id="attempts" class="mt-5 mx-auto text-center text-sm"></div>
+
+        <div id="attempts-won" class="hidden mt-5 mx-auto text-center text-sm"></div>
+
+        <!-- TASTO AGAIN CHE RICARICHERA' LA PAGINA -->
+        <button onclick="playAgain()" id="restart-btn" 
+            class="bg-[#F2CD0A] py-2 mt-8 mx-auto block px-3 text-lg rounded-md shadow-sm shadow-slate-500 text-[#EF2E2E]" style="display: none;">
+            PLAY AGAIN
+        </button>
+    </div>
+
+
+    <script src="main.js">        
+    </script>
+
+
+</body>
+
+</html>
