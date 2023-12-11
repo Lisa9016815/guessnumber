@@ -49,7 +49,7 @@ function checkGuess() {
         gifClose.style.display = "block";
         gifContainer.style.display = "block";
 
-        // Nascondi la GIF vicino
+        // Nascondi le GIF
         gifCorrect.style.display = "none";
         gifNear.style.display = "none";
         gifLose.style.display = "none";
@@ -94,7 +94,7 @@ function checkGuess() {
         gifNear.style.display = "block";
         gifContainer.style.display = "block";
 
-        // Nascondi la GIF di sbagliato
+        // Nascondi le GIF
         gifClose.style.display = "none";
         gifCorrect.style.display = "none";
         gifLose.style.display = "none";
@@ -121,7 +121,7 @@ function checkGuess() {
         gifClose.style.display = "block";
         gifContainer.style.display = "block";
 
-        // Nascondi la GIF vicino
+        // Nascondi le GIF
         gifCorrect.style.display = "none";
         gifNear.style.display = "none";
         gifLose.style.display = "none";

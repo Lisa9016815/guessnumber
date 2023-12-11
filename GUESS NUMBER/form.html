@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contattami</title>
+
+    <!-- LINK TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#1F1F1F] text-[#EBEBEB]" style="font-family: 'Press Start 2P';">
+
+    <form action="feedback.html" id="myForm" method="GET" class="max-w-2xl mx-auto p-7 h-screen flex flex-col justify-center items-center gap-8">
+
+        <h1 class="text-3xl border-4 p-4 rounded-md border-[#F2CD0A] text-[#EF2E2E]">CONTATTAMI</h1>
+
+        <div class="mt-4">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" class="rounded border-2 border-[#F2CD0A] text-black">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="rounded border-2 border-[#F2CD0A] text-black">
+        </div>
+
+        <div>
+            <label for=""></label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="inserisci il tuo messaggio" class="placeholder:text-[14px] placeholder:p-1 rounded-lg shadow-sm shadow-slate-500 border-2 border-[#EF2E2E] text-black p-3"></textarea>
+        </div>
+
+        <input type="submit" value="INVIA" class="bg-[#F2CD0A] text-[#EF2E2E] rounded py-2 px-5 shadow-sm shadow-slate-500 text-xl cursor-pointer">
+    </form>
+
+</body>
+</html>
