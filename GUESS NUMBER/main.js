@@ -13,11 +13,11 @@ function checkGuess() {
     let guessInput = document.getElementById("guess")
     let resultDiv = document.getElementById("result");
     let gifContainer = document.getElementById("gif-container");
-    const gifCorrect = document.getElementById("gif-correct");
-    const gifClose = document.getElementById("gif-close");
-    const gifNear = document.getElementById("gif-near");
-    const gifLose = document.getElementById("gif-lose");
-    const gifIntro = document.getElementById("start-gif")
+    let gifCorrect = document.getElementById("gif-correct");
+    let gifClose = document.getElementById("gif-close");
+    let gifNear = document.getElementById("gif-near");
+    let gifLose = document.getElementById("gif-lose");
+    // let gifIntro = document.getElementById("start-gif")
     let attemptsDiv = document.getElementById("attempts");
     let attemptsWonDiv = document.getElementById("attempts-won");
     let startBtn = document.getElementById("start-btn");
